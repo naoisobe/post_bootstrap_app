@@ -20,6 +20,7 @@ class PostsController < ApplicationController
     else
       flash.now[:alert] = "投稿に失敗しました"
       render :new
+      # redirect_to action: :new
     end
   end
 
